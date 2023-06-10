@@ -1,10 +1,9 @@
 // imports
-import { displayLoginForm, doLogin} from "./login.js";
+import { displayLoginForm} from "./login.js";
 import { fillLinkedIn } from "./linkedin.js";
 
 
 // declarations
-const loginButton = document.getElementById('loginButton');
 
 // functions
 function checkLogin() {
@@ -25,7 +24,7 @@ function checkLogin() {
 
 // function calls
 
-// chrome.storage.sync.set({ loggedIn: false }).then(() => {
-//     console.log("Login status changed");
-// });
+chrome.storage.sync.set({ loggedIn: true }).then(() => {
+    console.log("Login status changed");
+});
 checkLogin();

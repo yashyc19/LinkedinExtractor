@@ -1,6 +1,5 @@
 // declarations
 const mainContainer = document.getElementById('main-container');
-const loginButton = document.getElementById('loginButton');
 
 // functions
 export function displayLoginForm() {
@@ -24,8 +23,4 @@ export function displayLoginForm() {
             </form>
         </div>
     </div>`;
-}
-
-export function doLogin() {
-    
 }
