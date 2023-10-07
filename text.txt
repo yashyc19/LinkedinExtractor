@@ -1,0 +1,77 @@
+<div class="container m-3 p-3 text-center" style="width: max-content; background-color: antiquewhite;" id="main-container">
+    <div class="card" style="width: 18rem;" id="entryLogin">
+        <div class="card-body">
+            <h5 class="card-title">Hey there</h5>
+            <p class="card-text">To get started, please login ...</p>
+            <hr class="hr" />
+            <form id="loginForm">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="example@email.com">
+                <div id="emailHelp" class="form-text">Please use your company email to login.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+            <button type="submit" class="btn btn-primary" id="loginButton">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+--- linkedin page detials
+<div class="card" style="width: 18rem;" id="linkedin-scraper">
+    <div class="card-body">
+        <div class="row align-items-center">
+            <div class="col">
+                <h5 class="card-title">Hi, User</h5>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-outline-danger" id="logout-user">Logout</button>
+            </div>
+        </div>
+        <hr class="hr" />
+        <div class="p-3 text-start">
+            <div id="linkedin-details">
+                <div class="mb-3">
+                    <h5 class="card-title" id="linkedin-title">Profile title</h5>
+                    <p class="card-text" id="linkedin-title-name">(4) Yash Chaube | LinkedIn</p>
+                </div>
+                <div>
+                    <h5 class="card-title" id="linkedin-url">Profile Url</h5>
+                    <p class="card-text" id="linkedin-url-link">https://www.linkedin.com/in/yashchaube/</p>
+                </div>
+            </div>
+            <div class="mt-4 row">
+                <button type="button" class="btn btn-outline-primary col me-1" id="save-as-lead-btn">Lead</button>
+                <button type="button" class="btn btn-outline-primary col ms-1" id="save-as-company-btn">Company</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+--- is ldpg
+<div id="linkedin-details">
+    <div class="mb-3">
+        <h5 class="card-title" id="linkedin-title">Profile title</h5>
+        <p class="card-text" id="linkedin-title-name">(4) Yash Chaube | LinkedIn</p>
+    </div>
+    <div>
+        <h5 class="card-title" id="linkedin-url">Profile Url</h5>
+        <p class="card-text" id="linkedin-url-link">https://www.linkedin.com/in/yashchaube/</p>
+    </div>
+</div>
+<div class="mt-4 row">
+    <button type="button" class="btn btn-outline-primary col me-1" id="save-as-lead-btn">Lead</button>
+    <button type="button" class="btn btn-outline-primary col ms-1" id="save-as-company-btn">Company</button>
+</div>
+
+--- not a linkedin page
+<div id="linkedin-details">
+    <div class="alert alert-danger d-flex align-items-center" role="alert">
+        <div>
+            Error: Not a LinkedIn page
+        </div>
+    </div>
+</div>
